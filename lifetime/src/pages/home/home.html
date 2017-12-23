@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-title>
+      Finance Helper
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+  <ion-list>
+    <form [formGroup]="planDetailForm" (ngSubmit)="planAlt(planDetailForm.value)">
+      <ion-item>
+        <ion-input placeholder="Monthly Withdrawal" clearInput formControlName="monthlyWithdrawal"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Years Investing" clearInput formControlName="yearsInvesting"></ion-input>
+      </ion-item>
+      <button type="submit" [disabled]="!planDetailForm.valid" ion-button round outline>Calculate</button>
+    </form>
+  </ion-list>
+</ion-content>

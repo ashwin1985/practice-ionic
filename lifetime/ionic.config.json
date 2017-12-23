@@ -1,0 +1,8 @@
+{
+  "name": "lifetime",
+  "app_id": "d65b03bd",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
